@@ -1,3 +1,7 @@
-<p>
-  proposal-list works!
-</p>
+<h1>Proposal List</h1>
+
+
+<div *ngFor="let proposal of proposals">
+  {{proposal.id}} - {{proposal.customer}}: {{proposal.client_email}}
+
+</div>
