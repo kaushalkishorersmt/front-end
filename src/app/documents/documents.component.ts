@@ -16,7 +16,7 @@ export class DocumentsComponent implements OnInit {
   mode = "Observable";
 
   constructor(
-    private documentService: DocumentService,
+    private documentService: DocumentService
   ) { }
 
   ngOnInit() {

@@ -11,6 +11,7 @@ import { DocumentService } from './documents/document.service';
 import { ProposalListComponent } from './proposal/proposal-list/proposal-list.component';
 import { ProposalNewComponent } from './proposal/proposal-new/proposal-new.component';
 import { ProposalShowComponent } from './proposal/proposal-show/proposal-show.component';
+import { ProposalService } from './proposal/proposal.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -32,7 +33,7 @@ import { AppRoutingModule } from './app-routing.module';
     NgbModule.forRoot(),
     HttpModule
   ],
-  providers: [DocumentService],
+  providers: [DocumentService, ProposalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
